@@ -40,6 +40,6 @@ spec:
                 - arm64
       containers:
       - name: nginx
-        image: public.ecr.aws/z9d2n7e1/nginx:1.19.5
+        image: 877976363238.dkr.ecr.ap-southeast-2.amazonaws.com/myrepo:498413a0a79077cf5c06456a323d55034997c9d6
         ports:
         - containerPort: 8001
