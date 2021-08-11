@@ -14,3 +14,11 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN apt install -y nodejs
 
 CMD ["/tmp/docker_run_git.sh"]
+
+COPY docker-entrypoint.sh /docker-entrypoint.sh
+
+WORKDIR /app
+
+ENTRYPOINT ["/docker-entrypoint.sh"]
+
+RUN ["chmod", "+x", "/docker-entrypoint.sh"]
