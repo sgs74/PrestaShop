@@ -2,7 +2,7 @@ name: Lint
 on: [push, pull_request]
 jobs:
   stylelint:
-    name: SCSS Lint
+    name: SCSS Lints
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
